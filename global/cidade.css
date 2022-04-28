@@ -1,0 +1,65 @@
+.fotos-caldas-bg{
+  margin-top: 40px;
+  padding: 40px;  
+  width: 100%;
+}
+.fotos-caldas{
+  width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
+} 
+
+.galeria-caldas{
+  display: grid;
+  margin: auto;
+  width: 1800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 35px;
+  padding-top: 80px;
+
+  
+}
+.galeria-caldas img{
+  width: 100%;
+  justify-self: center;
+  display: inline-block;
+}
+.fotos-caldas h1{    
+  margin-left: 20px;    
+  margin-bottom: 80px;  
+  margin-top: 48px;   
+  position: relative;  
+  justify-self: left;
+}
+
+.fotos-caldas h1::before{
+  content: '';
+  background: var(--cor-1);
+  width: 10px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 10px;  
+}
+@media (max-width: 1800px){
+  .fotos-caldas-bg{
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .fotos-caldas{
+    width: 100%;
+    margin: 0;
+  }
+  .galeria-caldas{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0;
+  }
+  .fotos-caldas h1{
+    margin-left: 100px;
+  }
+
+  
+}

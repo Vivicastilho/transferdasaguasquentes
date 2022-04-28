@@ -1,0 +1,74 @@
+.beneficios-bg{
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beneficio{
+  height: 300px;
+  padding: 48px;
+  margin: 120px;
+  display: flex;
+  justify-content: center;  
+    
+}
+.beneficios-bg h1{
+  margin-top: 80px;  
+  margin-left: 120px;
+  margin-bottom: 30px;  
+  margin-top: 120px;  
+  padding-left: 20px;  
+  position: relative;
+  margin-left: 20px;
+}
+
+
+.beneficios-bg h1::before{
+  content: '';
+  background: var(--cor-1);
+  width: 10px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 10px;  
+
+}
+.vantagens{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 230px;
+  height: 230px;
+  box-shadow: 0 0 20px grey;
+  cursor: pointer;
+  align-self: center;
+  transition: .3s;
+  
+}
+.vantagens p{
+  color: #a9a9a9;
+  margin-bottom: 50px;
+  
+}
+.vantagens:hover{
+  background: var(--cor-11);
+  width: 260px;
+  height: 260px;
+  
+}
+.vantagens img{
+  display: inline-block;
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+}
+@media(max-width: 1600px){
+ .beneficios-bg{
+  display: none;
+ }
+
+}

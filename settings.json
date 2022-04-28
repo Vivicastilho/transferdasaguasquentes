@@ -1,0 +1,38 @@
+{
+  "editor.fontFamily": "'IBM Plex Mono', Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 25,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Origamid",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "editor.colorDecorators": false,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "workbench.iconTheme": "origamid-next-icons",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "editor.minimap.renderCharacters": false,
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "breadcrumbs.filePath": "off",
+  "outline.icons": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 0,
+  "html.autoClosingTags": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "color-highlight.markerType": "dot-before",
+  "files.autoSave": "afterDelay",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // "auto-rename-tag.activationOnLanguage": ["*"]
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+}

@@ -1,0 +1,58 @@
+.galeria-titulo {
+  margin-bottom: 30px;  
+  margin-top: 120px;
+  padding: 0;
+  padding-left: 20px;  
+  position: relative;
+  margin-left: 20px;
+  grid-column: span 2;
+}
+
+.background{
+  background-image: url(../Imagens/Carro-topo.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+}
+
+
+.galeria-titulo::before{
+  content: '';
+  background: var(--cor-1);
+  width: 10px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 10px;  
+
+}
+
+.galeria-carros{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1800px;
+  gap: 40px;
+  margin: auto;
+  
+}
+.galeria-carros img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+@media (max-width: 1800px){
+  .galeria-carros{
+    width: 100%;
+  }
+}
+@media (max-width: 1200px){
+  .galeria-carros{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+   
+  }
+}

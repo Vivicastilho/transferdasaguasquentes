@@ -1,0 +1,24 @@
+@import "./Utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+/* global */
+@import "./global/global.css";
+@import "./global/header.css";
+
+/* main */
+@import "./global/main.css";
+
+/* Sobre */
+@import "./global/sobre.css";
+
+/* Fotos Caldas Novas */
+@import "./global/cidade.css";
+
+/* Vantagens */
+@import "./global/vantagens.css";
+
+/* Footer */
+@import "./global/footer.css";
+
+/* Galeria */
+@import "./global/galeria.css";

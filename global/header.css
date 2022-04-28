@@ -1,0 +1,166 @@
+.header-bg {
+  position: relative;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: absolute;
+  columns: 1/-1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header-menu a{
+ padding: 10px;
+}
+
+.header-menu a::after{
+  content: '';
+  margin-left: 10px;
+  width: 0;
+  height: 3px;
+  background-color: var(--cor-4);
+  display: block;
+  transition: .3s;
+}
+.header-menu a:hover::after{
+  width: 100%;
+}
+
+/* .introducao img {
+  display: inline-block;
+  justify-self: end;
+  align-self: start;
+  
+} */
+.background{
+  background-image: url(../Imagens/Carro-topo.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+}
+.introducao-conteudo p {
+  margin: 0;
+  width: 700px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  font-size: 1.5rem;
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 400;
+
+}
+
+.introducao-conteudo h1{
+  margin-bottom: 30px;  
+  margin-top: 120px;
+  padding: 0;
+  padding-left: 20px;  
+  position: relative;
+  margin-left: 20px;
+
+}
+
+
+.introducao-conteudo h1::before{
+  content: '';
+  background: var(--cor-1);
+  width: 10px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 10px;  
+
+}
+
+.header-menu  {
+  display: flex;
+  gap: 40px;
+  margin-right: 50px;
+}
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.botao{
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 150px;
+  padding: 16px 32px;
+  background: linear-gradient(#6A89AC, #3E628B);
+  color: #F5F5F5;
+  border-radius: 5px;
+}
+
+@media (max-width: 1400px) {
+  .header-menu a{
+    font-size: 1.25rem;
+        
+  }
+  .header-menu{
+    gap: 10px;
+  }
+  .introducao{
+    grid-template-columns: 500px 1fr;
+  }
+  .introducao p{
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .introducao{
+    grid-template-columns: 1fr;   
+    
+  }
+  .background{
+    display: none;
+  }
+  .introducao h1{    
+    text-align: center;
+    padding: 0;
+    margin: 0 auto ;
+  }
+  .introducao p{
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  .introducao h1::before{
+    margin-top: 20px;
+    display: none;
+  }
+  .introducao a{
+    display: inline-block;
+    justify-self: center;  
+  }
+  .introducao-conteudo{
+    display: grid;
+    
+  }
+  .header{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    
+    
+
+  }
+  .header-menu{
+    padding: 20px 0 0;
+    margin: 0;
+     
+  }
+  .header-menu li{
+   height: 40px;
+  }
+
+}
