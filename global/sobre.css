@@ -58,6 +58,10 @@
   font-weight: 900
 }
 @media (max-width: 1200px){
+  .sobre-bg{
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
   .foto-sobre img{
     display: none;
   }

@@ -1,56 +1,51 @@
-.footer-bg{
+.footer-bg {
   background: var(--cor-9);
-  display: flex;  
+  display: flex;
   height: 245px;
-  width: 100%;  
+  width: 100%;
   margin: auto;
   left: auto;
   right: auto;
   position: relative;
-  
 }
-.div-footer{
+.div-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;   
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
-  
 }
 
-.footer-contato{
+.footer-contato {
   color: white;
   display: flex;
   justify-content: space-between;
-  
 }
-.footer-container{  
+.footer-container {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  
 }
 
-.footer-contato h3{
+.footer-contato h3 {
   grid-column: span 2;
 }
 
-.footer-redes{
+.footer-redes {
   width: 200px;
   display: flex;
   gap: 20px;
   justify-content: right;
   align-items: center;
 }
-.direitos-footer{
+.direitos-footer {
   display: grid;
   justify-content: center;
-  bottom: 0;  
+  bottom: 0;
   background: var(--cor-8);
   width: 100%;
   position: absolute;
-  margin: auto;  
- 
+  margin: auto;
 }
-.facebook{
+.facebook {
   font-family: "segoe-ui", sans-serif;
   position: fixed;
   display: inline-block;
@@ -62,4 +57,23 @@
   right: -75px;
   top: 50vh;
   transform: rotate(270deg);
+}
+.whatsapp {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .whatsapp {
+    background-image: url(../Imagens/whatsapp.svg);
+    position: fixed;
+    display: inline-block;
+    cursor: pointer;
+    right: 0;
+    top: 88vh;
+    width: 80px;
+    height: 80px;
+  }
+  .facebook {
+    display: none;
+  }
 }
