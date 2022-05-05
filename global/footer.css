@@ -127,7 +127,8 @@
     position: fixed;
     display: inline-block;
     cursor: pointer;
-    right: 0; 
+    right: 0;
+    top: 85%;
     width: 80px;
     height: 80px;
   }
