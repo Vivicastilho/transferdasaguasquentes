@@ -32,12 +32,6 @@
   width: 100%;
 }
 
-/* .introducao img {
-  display: inline-block;
-  justify-self: end;
-  align-self: start;
-  
-} */
 .background{
   background-image: url(../Imagens/Carro-topo.png);
   width: 100%;
@@ -120,6 +114,10 @@
     grid-template-columns: 1fr;   
     
   }
+  .header img{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .background{
     display: none;
   }
@@ -157,7 +155,9 @@
   }
   .header-menu{
     padding: 20px 0 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
      
   }
   .header-menu li{
@@ -165,3 +165,22 @@
   }
 
 }
+@media (max-width: 500px){
+  .header-menu a{
+    font-size: 1rem;
+    padding: 0;    
+  }
+  .header-menu{
+    gap: 10px;
+  }
+  .introducao h1, .introducao span{
+    font-size: 1.75rem;
+  }
+  .introducao p{
+    font-size: 1rem;
+  }
+  .introducao-conteudo .botao{
+    margin: 0 0 30px;
+  }
+  
+} 

@@ -57,6 +57,16 @@
 .sobre-titulo{
   font-weight: 900
 }
+@media(max-width:1000px){
+  .sobre h1::before{
+    margin-top: 20px;
+    display: none;
+  }
+  .foto-sobre{
+    width: 0;
+    height: 0;
+  }
+}
 @media (max-width: 1200px){
   .sobre-bg{
     grid-template-columns: 1fr;
@@ -65,4 +75,39 @@
   .foto-sobre img{
     display: none;
   }
+}
+@media (max-width: 500px){
+ .sobre-bg{
+   display: inline-block;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+ }
+ .sobre{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;   
+  padding: 0;
+  margin-top: 150px;
+ }
+
+ .sobre h1 {
+  font-size: 1.75rem;
+ 
+  margin: 0 auto 0 auto;
+  
+ }
+ .sobre p{
+   width: 100%;
+   padding: 20px;
+   margin: 0;
+   font-size: 1rem;
+ }
+ .sobre .botao{
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
 }

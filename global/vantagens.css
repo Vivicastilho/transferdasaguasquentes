@@ -66,9 +66,23 @@
   width: 50px;
   height: 50px;
 }
+
+
 @media(max-width: 1600px){
  .beneficios-bg{
   display: none;
  }
 
+}
+
+@media (max-width: 500px){
+  .vantagens-lista{
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin-bottom: 220px;
+    justify-items: center;
+  }
+  .lista-fotos{
+    width: 100%;
+  }
 }

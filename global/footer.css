@@ -36,6 +36,10 @@
   justify-content: right;
   align-items: center;
 }
+.footer-copy{
+  font-size: 0.75rem;
+  font-style: italic;
+}
 .direitos-footer {
   display: grid;
   justify-content: center;
@@ -75,5 +79,47 @@
   }
   .facebook {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-bg{
+    height: 200px;
+  }
+  .div-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .footer-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-redes{
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .footer-bg{
+    height: 400px;
+  }
+  .div-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .footer-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-redes{
+    justify-content: center;
   }
 }

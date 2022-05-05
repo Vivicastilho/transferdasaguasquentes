@@ -58,7 +58,26 @@
   .fotos-caldas h1{
     margin-left: 20px;
   }
-
- 
   
+}
+@media (max-width: 1000px){
+  .fotos-caldas h1::before{
+    margin-top: 20px;
+    display: none;
+  }
+}
+@media (max-width: 500px){
+  .fotos-caldas h1, .fotos-caldas span{
+    font-size: 1.75rem;
+    margin: 0;
+    text-align: center;
+  }
+  .galeria-caldas{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fotos-caldas{
+    height: fit-content;
+    
+  }
 }
