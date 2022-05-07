@@ -12,7 +12,8 @@
   background-image: url(../Imagens/Carro-topo.png);
   width: 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: right top;
+  position: absolute;
   height: 100%;
 }
 
