@@ -5,34 +5,33 @@
   margin-right: auto;
 }
 
-
-.header {  
+.header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   position: absolute;
   columns: 1/-1;
   width: 100%;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
-.header-menu a{
- padding: 10px;
+.header-menu a {
+  padding: 10px;
 }
 
-.header-menu a::after{
-  content: '';
+.header-menu a::after {
+  content: "";
   margin-left: 10px;
   width: 0;
   height: 3px;
   background-color: var(--cor-4);
   display: block;
-  transition: .3s;
+  transition: 0.3s;
 }
-.header-menu a:hover::after{
+.header-menu a:hover::after {
   width: 100%;
 }
 
-.background{
+.background {
   background-image: url(../Imagens/Carro-topo.png);
   width: 100%;
   background-repeat: no-repeat;
@@ -45,35 +44,31 @@
   padding-left: 30px;
   padding-bottom: 60px;
   font-size: 1.5rem;
-  font-family: 'Roboto', helvetica, sans-serif;
+  font-family: "Roboto", helvetica, sans-serif;
   font-weight: 400;
-
 }
 
-.introducao-conteudo h1{
-  margin-bottom: 30px;  
+.introducao-conteudo h1 {
+  margin-bottom: 30px;
   margin-top: 220px;
   padding: 0;
-  padding-left: 20px;  
+  padding-left: 20px;
   position: relative;
   margin-left: 20px;
-
 }
 
-
-.introducao-conteudo h1::before{
-  content: '';
+.introducao-conteudo h1::before {
+  content: "";
   background: var(--cor-1);
   width: 10px;
   height: 50px;
   display: block;
   position: absolute;
   left: 1px;
-  top: 10px;  
-
+  top: 10px;
 }
 
-.header-menu  {
+.header-menu {
   display: flex;
   gap: 40px;
   margin-right: 50px;
@@ -84,103 +79,96 @@
   justify-content: center;
   align-items: center;
 }
-.botao{
+.botao {
   display: inline-block;
   margin-left: 30px;
   margin-bottom: 150px;
   padding: 16px 32px;
-  background: linear-gradient(#6A89AC, #3E628B);
-  color: #F5F5F5;
+  background: linear-gradient(#6a89ac, #3e628b);
+  color: #f5f5f5;
   border-radius: 5px;
 }
 
 @media (max-width: 1400px) {
-  .header-menu a{
+  .header-menu a {
     font-size: 1.25rem;
-        
   }
-  .header-menu{
+  .header-menu {
     gap: 10px;
   }
-  .introducao{
+  .introducao {
     grid-template-columns: 500px 1fr;
   }
-  .introducao p{
+  .introducao p {
     width: 100%;
   }
 }
 @media (max-width: 1000px) {
-  .introducao{
-    grid-template-columns: 1fr;   
-    
+  .introducao {
+    grid-template-columns: 1fr;
   }
-  .header img{
+  .header img {
     margin-left: auto;
     margin-right: auto;
   }
-  .background{
+  .background {
     display: none;
   }
-  .introducao h1{    
+  .introducao h1 {
     text-align: center;
     padding: 0;
-    margin: 0 auto ;
+    margin: 0 auto;
   }
-  .introducao p{
+  .introducao p {
     width: 80%;
     text-align: center;
     padding: 20px;
     margin: auto;
     padding-bottom: 40px;
   }
-  .introducao h1::before{
+  .introducao h1::before {
     margin-top: 20px;
     display: none;
   }
-  .introducao a{
+  .introducao a {
     display: inline-block;
-    justify-self: center;  
+    justify-self: center;
   }
-  .introducao-conteudo{
+  .introducao-conteudo {
     display: grid;
-    
   }
-  .header{
+  .header {
     display: grid;
     justify-content: center;
     position: relative;
-    
-    
-
   }
-  .header-menu{
+  .header-menu {
     padding: 20px 0 0;
     margin-left: auto;
     margin-right: auto;
-    
-     
   }
-  .header-menu li{
-   height: 40px;
+  .header-menu li {
+    height: 40px;
   }
-
 }
-@media (max-width: 600px){
-  .header-menu a{
+@media (max-width: 600px) {
+  .header-menu a {
     font-size: 1rem;
-    padding: 0;    
+    padding: 0;
   }
-  .header-menu{
+  .header-menu {
     gap: 10px;
   }
-  .introducao h1, .introducao span{
+  .introducao h1,
+  .introducao span {
     font-size: 1.75rem;
   }
-  .introducao p{
+  .introducao p {
     font-size: 1rem;
   }
-  .introducao-conteudo .botao{
+  .introducao-conteudo .botao {
     margin: 0 0 30px;
+    font-size: 1rem;
+    padding: 14px 24px;
   }
-  
-} 
+}
